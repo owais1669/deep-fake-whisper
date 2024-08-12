@@ -1,0 +1,51 @@
+# General configuration
+experiment_name: 'lcnn_evaluation'
+device: 'cuda'
+
+# Data configuration
+data:
+  dataset_path: '/path/to/dataset'
+  seed: 42
+  batch_size: 32
+  num_workers: 4
+
+# Model configuration
+model:
+  name: 'lcnn'
+  input_channels: 3
+  num_classes: 2
+  kernel_size: 3
+  padding: 1
+  stride: 1
+  max_pool_kernel_size: 2
+  dropout_rate: 0.2
+
+# Training configuration
+training:
+  epochs: 50
+  optimizer: 'adam'
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  scheduler:
+    name: 'cosine_annealing'
+    T_max: 50
+    eta_min: 1e-6
+# Checkpoint configuration
+checkpoint:
+  path: '../../trained_models/model__whisper_mesonet__1721628372.9526913/ckpth.pth'
+
+# Evaluation configuration
+evaluation:
+  metrics:
+    - 'accuracy'
+    - 'f1'
+    - 'precision'
+    - 'recall'
+# Evaluation configuration
+evaluation:
+  metrics:
+    - 'accuracy'
+    - 'f1'
+    - 'precision'
+    - 'recall'
+  # checkpoint_path: '../../trained_models/model__whisper_mesonet__1721628372.9526913/ckpth.pth'

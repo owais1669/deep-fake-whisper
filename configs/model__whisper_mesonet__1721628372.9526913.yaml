@@ -1,0 +1,15 @@
+checkpoint:
+  path: /home/owais/Documents/owais/whisper_paper_code/deepfake-whisper-features/trained_models/model__whisper_mesonet__1721628372.9526913/ckpt.pth
+data:
+  seed: 42
+model:
+  name: whisper_mesonet
+  optimizer:
+    lr: 0.0001
+    weight_decay: 0.0001
+  parameters:
+    fc1_dim: 1024
+    freeze_encoder: true
+    frontend_algorithm:
+    - lfcc
+    input_channels: 1

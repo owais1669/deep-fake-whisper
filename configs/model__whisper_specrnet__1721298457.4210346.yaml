@@ -1,0 +1,14 @@
+checkpoint:
+  path: /home/owais/Documents/owais/whisper_paper_code/deepfake-whisper-features/trained_models/model__whisper_specrnet__1721298457.4210346/ckpt.pth
+data:
+  seed: 42
+model:
+  name: whisper_specrnet
+  optimizer:
+    lr: 0.0001
+    weight_decay: 0.0001
+  parameters:
+    freeze_encoder: true
+    frontend_algorithm:
+    - lfcc
+    input_channels: 1

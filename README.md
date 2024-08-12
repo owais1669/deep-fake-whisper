@@ -1,3 +1,5 @@
+# This repository is a copy of the [deepfake-whisper-features](https://github.com/piotrkawa/deepfake-whisper-features/tree/main) repository. I am using it for research purposes with a few modifications. You can visit the original repository [here](https://github.com/piotrkawa/deepfake-whisper-features/tree/main).
+
 # Improved DeepFake Detection Using Whisper Features
 
 The following repository contains code for our paper called "Improved DeepFake Detection Using Whisper Features".
